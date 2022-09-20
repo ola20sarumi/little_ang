@@ -12,6 +12,6 @@ export class ApiService {
     return this.http.post<any>("http://localhost:8000/productList/", data);
   }
   getProduct(){
-    return this.http.get<any>("http://localhost:8000/productList/")
+    return this.http.get<any>("http://localhost:8000/productList/");
   }
 }

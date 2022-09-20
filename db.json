@@ -1,6 +1,23 @@
 {
   "productList": [
-    
+    {
+      "productName": "apple",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 12,
+      "comment": "ewee",
+      "date": "2022-09-19T21:00:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "rewes",
+      "category": "Electronics",
+      "freshness": "Brand New",
+      "price": 13,
+      "comment": "serr",
+      "date": "2022-09-19T21:00:00.000Z",
+      "id": 2
+    }
   ],
   "comments": [
     {
