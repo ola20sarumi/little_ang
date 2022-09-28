@@ -26,7 +26,7 @@
         <!-- Category Column -->
         <ng-container matColumnDef="category">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Category </th>
-          <td mat-cell *matCellDef="let row"> {{row.category}}% </td>
+          <td mat-cell *matCellDef="let row"> {{row.category}} </td>
         </ng-container>
     
         <!-- Date Column -->
@@ -57,10 +57,10 @@
         <ng-container matColumnDef="action">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
           <td mat-cell *matCellDef="let row"> 
-            <button mat-icon-button="primary">
+            <button mat-icon-button (click)="editProduct(row)" color="primary">
               <mat-icon>edit</mat-icon>
             </button>
-            <button mat-icon-button="warn">
+            <button (click)="deleteProduct(row.id)" mat-icon-button="warn">
               <mat-icon>delete</mat-icon>
             </button>
           </td>

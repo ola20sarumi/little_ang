@@ -1,15 +1,6 @@
 {
   "productList": [
     {
-      "productName": "apple",
-      "category": "Fruits",
-      "freshness": "Brand New",
-      "price": 12,
-      "comment": "ewee",
-      "date": "2022-09-19T21:00:00.000Z",
-      "id": 1
-    },
-    {
       "productName": "rewes",
       "category": "Electronics",
       "freshness": "Brand New",
@@ -17,6 +8,24 @@
       "comment": "serr",
       "date": "2022-09-19T21:00:00.000Z",
       "id": 2
+    },
+    {
+      "productName": "scratch",
+      "category": "Electronics",
+      "freshness": "Brand New",
+      "price": 4,
+      "comment": "rrt",
+      "date": "2022-09-20T21:00:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "sol",
+      "category": "Vegetables",
+      "freshness": "Brand New",
+      "price": 2,
+      "comment": "rer",
+      "date": "2022-09-06T21:00:00.000Z",
+      "id": 4
     }
   ],
   "comments": [

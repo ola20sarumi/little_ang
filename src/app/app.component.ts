@@ -30,7 +30,11 @@ export class AppComponent implements OnInit {
   openDialog() {
     this.dialog.open(DialogComponent, {
       width: '30%'
-    });
+    }).afterClosed().subscribe(val=>{
+      if(val === 'save'){
+        this.getAllProducts();
+      }
+    })
   }
   getAllProducts(){
     this.api.getProduct()
@@ -44,6 +48,28 @@ export class AppComponent implements OnInit {
         alert("Unable to fetch records")
       }
     })
+  }
+  editProduct(row: any){
+    this.dialog.open(DialogComponent,{
+      width: '30%',
+      data:row
+    }).afterClosed().subscribe(val=>{
+      if(val==='update'){
+        this.getAllProducts();
+      }
+    })
+  }
+  deleteProduct(id : number){
+    this.api.deleteProduct(id)
+    .subscribe({
+      next:(res)=>{
+        alert('Product Deleted succesfully');
+        this.getAllProducts();
+      },
+      error:()=>{
+        alert('error while deleting')
+      }
+    })  
   }
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
